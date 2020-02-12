@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Header from './components/header';
+import './app.scss';
 
-function App() {
-  return (
-    <div className="App">
-      Test
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Header />
+      </div>
+    )
+  }
 }
 
 export default App;
