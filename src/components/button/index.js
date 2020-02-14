@@ -3,26 +3,26 @@ import PropTypes from 'prop-types';
 
 class SharedButton extends Component {
 
-  submitEvent() {
-    if(this.props.emitEvent) {
+  submitEvent(){
+    if(this.props.emitEvent){
       this.props.emitEvent();
     }
   }
 
-  render() {
-
+  render(){
     const { buttonText } = this.props;
 
-    return (
+    return(
       <button onClick={() => this.submitEvent()} data-test="buttonComponent">
         {buttonText}
       </button>
-    )
+    );
   }
 }
 
 SharedButton.propTypes = {
-  
+  buttonText: PropTypes.string,
+  emitEvent: PropTypes.func
 };
 
 export default SharedButton;
