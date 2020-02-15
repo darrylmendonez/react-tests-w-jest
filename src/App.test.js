@@ -43,7 +43,7 @@ describe('App Component', () => {
   it('exampleMethod_returnsAValue Method should return value as expected', () => {
     const classInstance = wrapper.instance();
     const newValue = classInstance.exampleMethod_returnsAValue(6);
-    expect(newValue).toBe(7);
+    expect(newValue).toBe(8);
   });
 
 });
