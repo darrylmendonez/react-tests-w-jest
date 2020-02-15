@@ -10,7 +10,7 @@ import './app.scss';
 
 /* This const is not used within our app.
    Although we are passing it to the Headline Component
-   it is only here as an exampleof testing PropTypes */
+   it is only here as an example of testing PropTypes */
 const tempArr = [{
   fName: 'Joe',
   lName: 'Bloggs',
